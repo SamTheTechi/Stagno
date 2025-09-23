@@ -17,7 +17,9 @@ def decode_message(image: Image.Image) -> str:
         try:
             decoded += chr(int(byte, 2))
             if decoded.endswith("<<<END>>>"):
+                print(decoded.replace("<<<END>>>", ""))
                 return decoded.replace("<<<END>>>", "")
         except ValueError:
             pass
+
     return decoded

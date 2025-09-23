@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/encode': 'http://localhost:8080',
-      '/decode': 'http://localhost:8080',
+      '/encode': 'http://localhost:8000',
+      '/decode': 'http://localhost:8000',
     },
   },
 })
