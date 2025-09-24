@@ -49,13 +49,13 @@ function DecodePage() {
   }
 
   return (
-    <motion.div 
+    <motion.div
       className="page-content"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.h1 
+      <motion.h1
         className="page-title"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -63,8 +63,8 @@ function DecodePage() {
       >
         Decode Message
       </motion.h1>
-      
-      <motion.p 
+
+      <motion.p
         className="page-subtitle"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -73,7 +73,7 @@ function DecodePage() {
         Extract a secret message from an image
       </motion.p>
 
-      <motion.div 
+      <motion.div
         className="encode-form"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ function DecodePage() {
           <label htmlFor="image-input" className="form-label">
             Select Image
           </label>
-          <motion.div 
+          <motion.div
             className="file-input-wrapper"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -102,7 +102,7 @@ function DecodePage() {
         </div>
 
         {error && (
-          <motion.div 
+          <motion.div
             className="error-message"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -119,12 +119,12 @@ function DecodePage() {
           whileTap={{ scale: 0.95 }}
         >
           {isLoading ? (
-            <motion.div 
+            <motion.div
               className="loading-spinner"
               animate={{ rotate: 360 }}
               transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
             >
-              
+
             </motion.div>
           ) : (
             'Decode Message'
@@ -133,14 +133,14 @@ function DecodePage() {
       </motion.div>
 
       {decodedMessage && (
-        <motion.div 
+        <motion.div
           className="result-section"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.2 }}
         >
           <h3>Decoded Message:</h3>
-          <motion.div 
+          <motion.div
             className="decoded-message-box"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}

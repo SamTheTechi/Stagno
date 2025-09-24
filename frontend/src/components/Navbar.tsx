@@ -6,8 +6,8 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link 
-        to="/" 
+      <Link
+        to="/"
         className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
       >
         <motion.span
@@ -17,8 +17,8 @@ function Navbar() {
           Home
         </motion.span>
       </Link>
-      <Link 
-        to="/encode" 
+      <Link
+        to="/encode"
         className={`nav-link ${location.pathname === '/encode' ? 'active' : ''}`}
       >
         <motion.span
@@ -28,8 +28,8 @@ function Navbar() {
           Encode
         </motion.span>
       </Link>
-      <Link 
-        to="/decode" 
+      <Link
+        to="/decode"
         className={`nav-link ${location.pathname === '/decode' ? 'active' : ''}`}
       >
         <motion.span

@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <motion.div 
+    <motion.div
       className="page-content"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.h1 
+      <motion.h1
         className="hero-title"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        🔐 Steganography Tool
+        Steganography Tool
       </motion.h1>
-      
-      <motion.p 
+
+      <motion.p
         className="hero-subtitle"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -27,22 +27,21 @@ function HomePage() {
         Hide secret messages inside images using advanced steganography techniques
       </motion.p>
 
-      <motion.div 
+      <motion.div
         className="features-grid"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        <motion.div 
+        <motion.div
           className="feature-card"
           whileHover={{ scale: 1.02, y: -5 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <div className="feature-icon">📝</div>
           <h3>Encode Messages</h3>
-          <p>Hide secret text messages inside your images without visible changes</p>
+          <p>Hide secret messages inside your images</p>
           <Link to="/encode" className="feature-link">
-            <motion.button 
+            <motion.button
               className="cta-button"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -52,17 +51,16 @@ function HomePage() {
           </Link>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="feature-card"
           whileHover={{ scale: 1.02, y: -5 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <div className="feature-icon">🔍</div>
           <h3>Decode Messages</h3>
-          <p>Extract hidden messages from images that contain secret data</p>
+          <p>Extract hidden messages from images</p>
           <Link to="/decode" className="feature-link">
-            <motion.button 
-              className="cta-button secondary"
+            <motion.button
+              className="cta-button"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -72,7 +70,7 @@ function HomePage() {
         </motion.div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="info-section"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -80,8 +78,8 @@ function HomePage() {
       >
         <h3>How it works</h3>
         <p>
-          This tool uses LSB (Least Significant Bit) steganography to hide text messages 
-          in the red channel of image pixels. The changes are imperceptible to the human eye 
+          This tool uses LSB (Least Significant Bit) steganography to hide text messages
+          in the red channel of image pixels. The changes are unnoticable to the human eye
           but can be decoded by the algorithm.
         </p>
       </motion.div>

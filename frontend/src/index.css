@@ -12,7 +12,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Custom CSS Variables for Dark Theme */
   --background-color: #1a1a1a;
   --text-color: #ffffff;
   --primary-color: #646cff;
@@ -25,9 +24,6 @@ a {
   font-weight: 500;
   color: var(--primary-color);
   text-decoration: inherit;
-}
-a:hover {
-  color: var(--secondary-color);
 }
 
 body {
@@ -55,32 +51,13 @@ button {
   transition: border-color 0.25s, background-color 0.25s;
   color: var(--text-color);
 }
+
 button:hover {
   border-color: var(--primary-color);
   background-color: #3a3a3a;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-/* Light theme adjustments (if needed, though we are focusing on dark) */
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Fallback for light theme, though we aim for dark */
-    color: #213547;
-    background-color: #ffffff;
-    --background-color: #ffffff;
-    --text-color: #213547;
-    --primary-color: #747bff;
-    --secondary-color: #535bf2;
-    --card-background: #f9f9f9;
-    --border-color: #e0e0e0;
-  }
-  a:hover {
-    color: var(--primary-color);
-  }
-  button {
-    background-color: var(--card-background);
-  }
 }
